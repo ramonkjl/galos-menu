@@ -45,8 +45,8 @@ export default function Home({ data }) {
 }
 
 export async function getStaticProps() {
-  //const response = await fetch('http://localhost:3000/api/menu')
-  const response = await fetch('http://galosburguer.vercel.com/api/menu')
+  //const response = await fetch('http://localhost:3000/api/menu')//Dev ambient
+  //const response = await fetch('http://galosburguer.vercel.com/api/menu')//Proction
   const data = await response.json()
   console.table(data);
 
