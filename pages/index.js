@@ -26,17 +26,16 @@ export default function Home({ data }) {
       </Jumbotron>
       <Container className="menu-cards">
         <CardGroup>
-          {data.photos.map(photo => (
+{/*          {data.photos.map(photo => (
             <Card key={photo}>
               <CardImg top width="100%" src={photo} alt="Card image cap" />
               <CardBody>
                 <CardTitle tag="h5">Hamburguer Galo</CardTitle>
-                {/* <CardSubtitle tag="h6" className="mb-2 text-muted">Galo</CardSubtitle> */}
                 <CardText>Descrição rápida</CardText>
                 <Button>Adicionar</Button>
               </CardBody>
             </Card>
-          ))}
+          ))} */}
         </CardGroup>
       </Container>
 
