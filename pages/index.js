@@ -26,7 +26,7 @@ export default function Home({ data }) {
       </Jumbotron>
       <Container className="menu-cards">
         <CardGroup>
-{/*          {data.photos.map(photo => (
+         {data.photos.map(photo => (
             <Card key={photo}>
               <CardImg top width="100%" src={photo} alt="Card image cap" />
               <CardBody>
@@ -35,7 +35,7 @@ export default function Home({ data }) {
                 <Button>Adicionar</Button>
               </CardBody>
             </Card>
-          ))} */}
+          ))}
         </CardGroup>
       </Container>
 
@@ -45,8 +45,9 @@ export default function Home({ data }) {
 
 export async function getStaticProps() {
   //const response = await fetch('http://localhost:3000/api/menu')//Dev ambient
-  //const response = await fetch('http://galosburguer.vercel.app/api/menu')//Proction
-  const data = {nome: 'Ramon'}//await response.json()
+  const response = await fetch('https://galosburguer.vercel.app/api/menu')//Proction
+  
+  const data = await response.json()
   console.table(data);
 
   return {
