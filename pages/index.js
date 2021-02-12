@@ -48,7 +48,7 @@ export async function getStaticProps() {
   const response = await fetch('https://galosburguer.vercel.app/api/menu')//Proction
   
   const data = await response.json()
-  console.table(data);
+  //console.table(data);
 
   return {
     props: { data: data }
